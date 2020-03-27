@@ -61,35 +61,34 @@ class ReflectionForm extends Component {
     render() { 
         return ( 
             <div>
-                <h2>Reflection Form</h2>
                 <form action="">
                     <fieldset>
                         <legend>New Reflection</legend>
-                        <div>
+                        <div className='formSpace'>
                             <label htmlFor="date">Date: </label>
                             <br/>
-                            <input type="date" id='date' name='date' value={this.state.date} onChange={this.handleInputs}/>
+                            <input type="date" id='date' name='date' value={this.state.date} onChange={this.handleInputs} className='dateInput'/>
                         </div>
-                        <div>
+                        <div className='formSpace'>
                             <label htmlFor="reflection">Reflection: </label>
                             <br/>
-                            <textarea name="reflection" id="reflection" cols="35" rows="10" value={this.state.reflection} onChange={this.handleInputs}/>
+                            <textarea name="reflection" id="reflection" cols="42" rows="10" value={this.state.reflection} onChange={this.handleInputs} className='inputs' placeholder=" Reflect on what you've learned, how you feel, and your plans for the upcoming days.."/>
                         </div>
-                        <div>
-                            <select name="level" id="level" value={this.state.confidenceLevel} onChange={this.handleInputs}>
+                        <div className='formSpace'>
+                            <select name="level" id="level" value={this.state.confidenceLevel} onChange={this.handleInputs} className='inputs'>
                             <option value="confidence">Confidence Level</option>
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
                             </select>
                         </div>
-                        <div>
+                        <div className='formSpace'>
                             <label htmlFor="confidence">Confidence Description: </label>
                             <br/>
-                            <textarea name="confidence" id="confidence" cols="30" rows="5" value={this.state.confidenceText} onChange={this.handleInputs}/>
+                            <textarea name="confidence" id="confidence" cols="36" rows="5" value={this.state.confidenceText} onChange={this.handleInputs} className='inputs' placeholder='Describe your confidence in your software developing skills at this point in time?'/>
                         </div>
-                        <div>
-                            <button onClick={this.handleSubmission}>Save</button>
+                        <div className='formSpace'>
+                            <button onClick={this.handleSubmission} >Save Reflection</button>
                         </div>
                     </fieldset>
                 </form>

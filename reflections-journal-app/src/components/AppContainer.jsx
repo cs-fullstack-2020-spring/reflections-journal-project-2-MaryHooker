@@ -9,7 +9,8 @@ class AppContainer extends Component {
             reflectionList: [],
         }
     }
-
+    
+    //call back function to update state of array when passed down to child
     updateArray = (newArray) => {
         this.setState(
             {
@@ -21,7 +22,7 @@ class AppContainer extends Component {
     render() {
         return (
             <div>
-                <h1>Reflections</h1>
+                <h1> Daily Reflections</h1>
                 <div className='container'>
                     <div>
                         <ReflectionForm updateArray={this.updateArray} />
