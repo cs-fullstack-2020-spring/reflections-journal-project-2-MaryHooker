@@ -73,7 +73,7 @@ class ReflectionForm extends Component {
                         <div>
                             <label htmlFor="reflection">Reflection: </label>
                             <br/>
-                            <input type="textarea" id='reflection' name='reflection' value={this.state.reflection} onChange={this.handleInputs}/>
+                            <textarea name="reflection" id="reflection" cols="35" rows="10" value={this.state.reflection} onChange={this.handleInputs}/>
                         </div>
                         <div>
                             <select name="level" id="level" value={this.state.confidenceLevel} onChange={this.handleInputs}>
@@ -86,7 +86,7 @@ class ReflectionForm extends Component {
                         <div>
                             <label htmlFor="confidence">Confidence Description: </label>
                             <br/>
-                            <input type="confidence" id='confidence' name='confidence' value={this.state.confidenceText} onChange={this.handleInputs}/>
+                            <textarea name="confidence" id="confidence" cols="30" rows="5" value={this.state.confidenceText} onChange={this.handleInputs}/>
                         </div>
                         <div>
                             <button onClick={this.handleSubmission}>Save</button>
