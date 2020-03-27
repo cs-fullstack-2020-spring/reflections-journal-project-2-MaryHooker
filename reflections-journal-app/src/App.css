@@ -1,0 +1,10 @@
+body{
+  background-color: rgb(212, 168, 56);
+  color: rgb(22, 38, 107); 
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
