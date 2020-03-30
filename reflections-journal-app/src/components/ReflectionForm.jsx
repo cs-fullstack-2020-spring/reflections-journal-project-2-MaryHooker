@@ -26,7 +26,7 @@ class ReflectionForm extends Component {
     //function to run everytime button is pressed
     handleSubmission = (event) =>{
         event.preventDefault();
-        //function to push current state of each property into above array as an object
+        //function to push current state of each property into above array 
         this.state.reflectionList.push(
             {
                 date:this.state.date,
