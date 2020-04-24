@@ -9,7 +9,7 @@ class AppContainer extends Component {
             reflectionList: [],
         }
     }
-    
+    //DELETE THIS MESSAGE***
     //call back function to update state of array when passed down to child
     updateArray = (newArray) => {
         this.setState(
